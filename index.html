@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Similar Finder - Movie & Series Recommender</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="main-wrapper">
+
+  <header class="clean-header">
+    <h1>Similar Finder</h1>
+    <p>Discover Similar Type Of Movies & Web Series</p>
+  </header>
+
+  <main class="app-card">
+    <label for="queryInput" class="search-title">Search Film or Series:</label>
+    
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="queryInput" 
+        class="search-box" 
+        placeholder="Type to search (e.g. Iron Man, Mirzapur, 3 Idiots, War)..." 
+        autocomplete="off"
+      />
+      <button id="clearBtn" class="clear-btn" aria-label="Clear Search">&times;</button>
+      <div id="dropdownList" class="dropdown"></div>
+    </div>
+
+    <!-- Live Dynamic Results -->
+    <div class="results-area" id="resultsArea"></div>
+  </main>
+
+</div>
+
+<script src="js/dataset.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
